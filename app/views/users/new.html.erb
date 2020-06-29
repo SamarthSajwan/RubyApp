@@ -1,0 +1,28 @@
+USER INFO
+<hr>
+
+  <%= form_for @user do |f| %>
+  
+	Name  <%= f.text_field :name %><br>
+	Email <%= f.text_field :email %><br>
+	Phone <%= f.text_field :phone %><br>
+	<%= f.submit %>
+<% end -%>
+
+<hr>
+
+All UsersInfo<br><br>
+
+<%= form_for @user do |f| %>
+	<%= f.submit %>
+
+	<%if !@users.blank? %>
+		<% for u in @users %>
+			<%= u.name%> <%= u.email%> <%= u.phone%> <br>
+
+		<% end %>
+<% end %>
+
+	<% else %>
+
+	<% end %>
