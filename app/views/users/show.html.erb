@@ -1,9 +1,11 @@
-All UsersInfo<br><br>
+<br><br><br><br><br><br><h1 align='center'>All Users Info</h1><br><br>
 
 <%if !@users.blank? %>
 	<% for u in @users %>
-		<%= u.name%> <%= u.email%> <%= u.phone%> <br>
-
+		<%= u.id %><%= u.name%> <%= u.email%> <%= u.phone%> <hr><%= link_to "Edit", edit_path(@user), :class => 'btn-btn-default' %><hr><%= link_to "Delete", delete_path(@user),
+		 method: :delete,
+		 data: {confirm: "Are you sure ?"},		
+		 :class => 'btn-btn-default' %><br><br><br>
 	<% end %>
 
 <% else %>

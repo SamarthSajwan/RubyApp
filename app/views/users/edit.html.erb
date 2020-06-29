@@ -1,7 +1,7 @@
-USER INFO
+Edit Data
 <hr>
 
-  <%= form_for :user,url: users_path do |f| %><br><br>  
+  <%= form_for :user, url : user_path(@user), method: :patch do |f| %><br><br>  
 	Name  <%= f.text_field :name %><br><br>
 	Email <%= f.text_field :email %><br><br>
 	Phone <%= f.text_field :phone %><br><br>	
