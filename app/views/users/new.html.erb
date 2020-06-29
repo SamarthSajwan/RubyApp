@@ -3,15 +3,15 @@ USER INFO
 
   <%= form_for @user do |f| %>
   
-	Name  <%= f.text_field :name %><br>
-	Email <%= f.text_field :email %><br>
-	Phone <%= f.text_field :phone %><br>
+	Name  <%= f.text_field :name %><br><br>
+	Email <%= f.text_field :email %><br><br>
+	Phone <%= f.text_field :phone %><br><br>	
 	<%= f.submit %>
 <% end -%>
 
 <hr>
 
-All UsersInfo<br><br>
+<!-- All UsersInfo<br><br>
 
 <%if !@users.blank? %>
 	<% for u in @users %>
@@ -21,4 +21,4 @@ All UsersInfo<br><br>
 
 <% else %>
 
-<% end %>
+<% end %> -->

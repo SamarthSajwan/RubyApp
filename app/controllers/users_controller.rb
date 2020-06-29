@@ -10,6 +10,11 @@ class UsersController < ApplicationController
 		@users=User.all
 	end
 
+	def show
+		@users=User.all
+		
+	end
+
 
 	def create
 		@user=User.new(params.require(:user).permit(:name, :email, :phone))

@@ -1,0 +1,11 @@
+All UsersInfo<br><br>
+
+<%if !@users.blank? %>
+	<% for u in @users %>
+		<%= u.name%> <%= u.email%> <%= u.phone%> <br>
+
+	<% end %>
+
+<% else %>
+
+<% end %>
